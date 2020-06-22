@@ -1,0 +1,165 @@
+
+.roof-humidity {
+  position: absolute;
+  top: 20%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  color: rgb(200,200,255);
+}
+
+.roof-temp {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  color: rgb(255,200,200);
+}
+
+.lvrm-humidity {
+  position: absolute;
+  top: 45%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: rgb(200,200,255);
+}
+
+.lvrm-temp {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  color: rgb(255,200,200);
+}
+
+.bdrm-humidity {
+  position: absolute;
+  top: 45%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  color: rgb(200,200,255);
+}
+
+.bdrm-temp {
+  position: absolute;
+  top: 45%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  color: rgb(255,200,200);
+}
+
+.target{
+  position: absolute;
+  top: 92%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: rgb(255,255,255);
+  font-size: x-large;
+}
+
+.increase{
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.decrease{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle_enable{
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.flush{
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.extract_living{
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.extract_roof{
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.fan_off{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fan_low{
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.fan_high{
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons{
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.pending_buttons{
+  background-color: #555555;
+  border: none;
+  color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.diagnostic_buttons{
+  background-color: #555555;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.hidden_buttons{
+  visibility: hidden;
+  background-color: #555555;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

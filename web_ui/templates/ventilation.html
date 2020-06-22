@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="10"/>
+  <title>Ventilation</title>
+  <link type="text/css" rel="stylesheet"
+        href="{{ url_for('static',
+              filename='style.css')}}?q=78" />
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  color: white;
+  font-size: 2em;
+}
+
+.bg {
+  /* The image used */
+  background-image: url({{background}});
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="roof-temp">{{roof_temp}}</div>
+<div class="roof-humidity">{{roof_hum}}</div>
+<div class="lvrm-temp">{{lvrm_temp}}</div>
+<div class="lvrm-humidity">{{lvrm_hum}}</div>
+<div class="bdrm-temp">{{bdrm_temp}}</div>
+<div class="bdrm-humidity">{{bdrm_hum}}</div>
+<div>
+  <div class="target">Target = {{target_temp}}°</div>
+  <div>
+    <form class="increase" action="{{ url_for('increase_target') }}" method = "POST">
+      <input class="buttons" type = "submit" value = " ▲ " />
+    </form>
+  </div>
+  <div>
+    <form class="decrease" action="{{ url_for('decrease_target') }}" method = "POST">
+      <input class="buttons" type = "submit" value = " ▼ " />
+    </form>
+  </div>
+    <div>
+    <form class="toggle_enable" action="{{ url_for('toggle_enable') }}" method = "POST">
+      <input class={{toggle_enable_class}} type = "submit" value = {{toggle_enable_value}} />
+    </form>
+  </div>
+  <div>
+    <form class="flush" action="{{ url_for('flush') }}" method = "POST">
+      <input class={{flush_button_class}} type = "submit" value = "Flush" />
+    </form>
+  </div>
+  <div>
+    <form class="extract_living" action="{{ url_for('extract_living') }}" method = "POST">
+      <input class={{diagnostic_button_class}} type = "submit" value = "Extract living" />
+    </form>
+  </div>
+  <div>
+    <form class="extract_roof" action="{{ url_for('extract_roof') }}" method = "POST">
+      <input class={{diagnostic_button_class}} type = "submit" value = "Extract roof" />
+    </form>
+  </div>
+  <div>
+    <form class="fan_off" action="{{ url_for('fan_off') }}" method = "POST">
+      <input class={{diagnostic_button_class}} type = "submit" value = "Fan off" />
+    </form>
+  </div>
+  <div>
+    <form class="fan_low" action="{{ url_for('fan_low') }}" method = "POST">
+      <input class={{diagnostic_button_class}} type = "submit" value = "Fan low" />
+    </form>
+  </div>
+  <div>
+    <form class="fan_high" action="{{ url_for('fan_high') }}" method = "POST">
+      <input class={{diagnostic_button_class}} type = "submit" value = "Fan high" />
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
